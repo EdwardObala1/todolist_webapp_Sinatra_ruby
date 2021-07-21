@@ -1,9 +1,11 @@
-ENV['RACK_ENV'] ||= 'staging'
-require 'bundler'
-Bundler.require(:default, ENV['RACK_ENV'])
+ENV['SINATRA_ENV'] ||= "development"
 
-configure :staging do
-    # set :database  #pick the db you will use in staging
-end
+require 'bundler/setup'
+Bundler.require(:default, ENV['SINATRA_ENV'])
 
-# require 'app' #set up MVC layout 
+# ActiveRecord::Base.establish_connection(
+#   :adapter => "sqlite3",
+#   :database => "db/#{ENV['SINATRA_ENV']}.sqlite"
+# )
+
+# require_all 'app'

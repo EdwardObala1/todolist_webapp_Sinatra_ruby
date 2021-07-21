@@ -1,43 +1,23 @@
-.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+   
+ <div class="flexbox">
+    <div class="">
+        <div id="grid" class="grid-wrapper">
+            <div id="header-image" class="card header"></div>
+            <div class="card subheader subhead-1"></div>
+            <div class="card subheader subhead-2"></div>
+            <div class="card item-1 medSpan"></div>
+            <div class="card item-2 medSpan"></div>
+            <div class="card item-3 medSpan"></div>
+            <div class="card item-4 medSpan"></div>
+            <div class="card item-5 smSpan"></div>
+            <div class="card item-6 smSpan"></div>
+            <div class="card item-7 smSpan"></div>
+            <div class="card item-8 smSpan"></div>
+            <div class= "card footer"></div>
+        </div>
+    </div>
 
-/* Change the color of links on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-
-/* CSS */
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-img {
-  display: block;
-  border: 0;
-  width: 100%;
-  height: auto;
-}
-
-.flexbox {
+    .flexbox {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -196,11 +176,3 @@ img {
       grid-area: item-8;
       background-image: url('https://unsplash.it/1587');
     }
-
-    .footer {
-      grid-area: footer;
-      height: 20vw;
-      background-image: url('https://unsplash.it/1505');
-    }
-
-
