@@ -25,8 +25,8 @@
       <div class="flexbox">
           <div class="">
             <div id="grid" class="grid-wrapper">
-                <div id="header-image" class="card header"></div>
-                <div class="card subheader subhead-1"></div>
+                <div id="header-image" class="card header">Hi How are you</div>
+                <div class="card subheader subhead-1" style = "text-align:left;"></div>
                 <div class="card subheader subhead-2"></div>
                 <div class="card item-1 medSpan"></div>
                 <div class="card item-2 medSpan"></div>
@@ -39,15 +39,18 @@
 
     <div class = "col-3 ml-auto" style = "border-radius:10%; height:600px; margin:auto; background-color:white;">
       <div = "col-10" style = "height:500px; margin-top:50px; border-radius:10%; margin-bottom:50px;">
-        <ui>
+      
+      <ui>
         <li><i>Example of your tasks here</i></li>
-        </ui>
+      </ui>
+      
+        
       <div = "row" style = "height:60%;"></div>
 
       <div = "row" style = "height:30%; padding:auto;">
         <form method = 'post' action = "/Todopage" style = "margin:10px; padding;10px 10px;">
           <label for="tasks" style = "padding:5px;">Add tasks to todo list</label><br>
-          <input type="text" id="tasks" name="tasks" placeholder="Go shopping" style = "padding:5px;"><br>
+          <input type="text" id="tasks" name="task" placeholder="Go shopping" style = "padding:5px;"><br>
           <input type="submit" value="Submit" style = "color:white; background-color:#601E1E; border-radius:10%;">
         <form>
       </div>

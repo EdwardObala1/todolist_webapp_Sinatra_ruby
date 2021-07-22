@@ -24,6 +24,8 @@
   
   
   .card {
+    color:white;
+    font-size: 20;
     background-size: cover;
     /* Change this based on the image main subject */
     background-position: center;
