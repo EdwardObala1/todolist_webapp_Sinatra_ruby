@@ -42,6 +42,9 @@
       
       <ui>
         <li><i>Example of your tasks here</i></li>
+        <% Task.columns.find_all { |column| ['task'].include? column.tasks_todo }.each do |column| do %>
+          <% <li>column</li> %>
+        <% end %>
       </ui>
       
         
