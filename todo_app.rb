@@ -18,3 +18,7 @@ end
 get "/Signup" do
   erb :"Signup.html"
 end
+
+get "/Signin" do
+  erb :"Signin.html"
+end
